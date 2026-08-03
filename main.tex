@@ -1,0 +1,69 @@
+\documentclass[10pt]{article}
+\usepackage[a4paper,top=3cm,bottom=2.25cm,left=2.25cm,right=2.25cm]{geometry}
+
+\input{config}
+\setmainfont{Times New Roman}
+\newcommand{\AddMore}[1]{{\color{red}[#1]}}
+
+% Line spacing
+\newcommand{\mylinespread}{1.18}  % store your desired spacing
+\setlength{\parindent}{0pt}  % Remove paragraph indentation
+\setlength{\parskip}{0.75\baselineskip} % Sets a line space between paragraphs
+\fancyhead[L]{\footnotesize \textit{
+\AddMore{Journal Name}
+}}
+\fancyhead[R]{\footnotesize \today}
+
+\begin{document}
+
+\renewcommand{\baselinestretch}{\mylinespread}\selectfont
+\setcounter{page}{1}
+
+\begin{center}
+{\LARGE \textbf{Paper Submission Title Page}}
+\vspace{-0.75em}
+\end{center}
+
+% mainbody
+\section{Paper title}
+\AddMore{Paper title}
+
+\section{Word count}
+\AddMore{999999} words
+
+\section{Authors}
+{\large\textbf{\AddMore{Author 1}}}
+\begin{itemize}
+    \item \textbf{Organisation:} \AddMore{Organisation 1}
+    \item \textbf{Address:} \AddMore{Address 1}
+    \item \textbf{Email:} \AddMore{email 1}
+    \item \textbf{ORCiD:} \AddMore{9999-9999-9999-9999}
+    \item \textbf{CRediT Contribution:} \AddMore{Contribution 1}
+\end{itemize}
+
+{\large\textbf{\AddMore{Author 2}}}
+\begin{itemize}
+    \item \textbf{Organisation:} \AddMore{Organisation 2}
+    \item \textbf{Address:} \AddMore{Address 2}
+    \item \textbf{Email:} \AddMore{email 2}
+    \item \textbf{ORCiD:} \AddMore{9999-9999-9999-9999}
+    \item \textbf{CRediT Contribution:} \AddMore{Contribution 2}
+\end{itemize}
+
+% full list: Conceptualization, Data Curation, Formal Analysis, Funding Acquisition, Investigation, Methodology, Project Administration, Resources, Software, Supervision, Validation, Visualization, Writing – original draft, Writing – review \& editing
+
+\AddMore{(corresponding author) put besides name}
+
+
+\section{Acknowledgements}
+\AddMore{Acknowledgement}
+
+\section{Funding source(s)}
+\AddMore{Funding}
+
+\section{Declaration of Interest}
+\AddMore{Declaration}
+
+% The authors declare that they have no known competing financial interests or personal relationships that could have appeared to influence the work reported in this paper.
+
+\end{document}

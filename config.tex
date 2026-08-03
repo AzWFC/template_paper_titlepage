@@ -1,0 +1,57 @@
+% Title spacing
+\usepackage{titlesec}
+\titlespacing*{\section}{0pt}{0.5em}{0em}
+\titlespacing*{\subsection}{0pt}{0.5em}{0em}
+% Type face
+\usepackage{fontspec}
+% \setmainfont{Optima.ttc}[
+%   UprightFeatures = {FontIndex=0} ,
+%   BoldFeatures = {FontIndex=1} ,
+%   ItalicFeatures = {FontIndex=2} ,
+%   BoldItalicFeatures = {FontIndex=3} ,
+% ]
+% Colours
+\usepackage{xcolor}
+\definecolor{oxblue}{HTML}{002147}
+\definecolor{oxred}{HTML}{AA1A2D}
+% For tables
+\usepackage{makecell}
+\usepackage[x11names,table]{xcolor}
+\usepackage{booktabs}  % for \toprule, \midrule, \bottomrule
+\usepackage{float}     % for [H] table placement
+\usepackage{caption}   % for \captionsetup
+\usepackage{array}
+% Figures
+\usepackage{graphicx}
+% For APA-style citations
+\usepackage{apacite}
+% No hyphenation
+\usepackage[none]{hyphenat}
+\sloppy
+
+\usepackage{enumitem}
+\setlist[itemize]{
+    itemsep=5pt,
+    topsep=0pt,
+    partopsep=0pt,
+    parsep=0pt,
+    leftmargin=2em
+}
+
+\usepackage{datetime2} % optional, not required for the basic version
+
+\renewcommand{\today}{\number\day\space \ifcase\month\or
+January\or February\or March\or April\or May\or June\or July\or August\or September\or October\or November\or December\fi
+\space \number\year}
+
+% Line spacing
+\usepackage{setspace}
+
+% Footer
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\pagestyle{fancy} % Set the page style to fancy
+\fancyhf{} % Clear default header and footer
+
+\renewcommand{\headrulewidth}{0.3pt} % Remove header line
+\renewcommand{\footrulewidth}{0pt} % Optional footer line
